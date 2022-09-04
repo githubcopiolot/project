@@ -1,0 +1,136 @@
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="blog.css">
+    <title>Document</title>
+
+    <!-- Adding Bootstrap and Google forms -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <!-- Adding google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,500;1,100&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <div>
+                <img src="/project1/images/logo.png" alt="">
+            </div>
+
+            <div class="nav-links" id="nav-links">
+                <ul>
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <li> <a href="index.html">  Home</a></li>
+                    <li> <a href="home.html"> About</a></li>
+                    <li> <a href="course.html"> Course</a></li>
+                    <li> <a href="blog.html"> Blog</a></li>
+                    <li> <a href="contact.html"> Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+
+        </nav>
+
+        <div class="text-box">
+            <h1>Our Various Online Certificate And Programs</h1>
+        </div>
+
+    </section>
+
+    
+    <!-- blog content -->
+
+    <section class="blog-content">
+        
+        <div class="row">
+            <div class="blog-left">
+                <img src="/project1/images/certificate.jpg" alt=""> 
+
+                <br><br>
+
+                <h3>Our Various Online Certificate And Programs</h3>
+                
+                <p>
+                    <strong>1. Uphold Company Standards : </strong> 
+                    Employees must meet certain criteria to achieve their online training certificates. These criteria are set forth by the organization and are based on desired outcomes and objectives. Thus, online training certifications can help you uphold company standards across the board. For example, employees must be able to display their compliance knowledge in a real world context to earn their online training certificates. Or to successfully complete a series of task simulations to prove their proficiency. As such, you can rest assured that these individuals will accurately reflect your brand image.
+                    <br> <br>
+                    
+                    <strong>2. Provide Proof Of Competency In The Event Of An Audit : </strong> 
+                    Audits can be stressful and time-consuming. Sometimes they may even be costly if the auditor discovers violations or inconsistencies in your paperwork. Fortunately, online training certification programs allow you to provide proof of employee competency. For example, all of your employees have completed the health and safety online training course and passed the final exam. Online training certifications also allow you to minimize the risk of violations, as employees have all the resources they need to comply with policies.br
+                    <br><br>
+                    
+                    <strong> 3. Focus On Areas For Improvement : </strong>
+                    Employees are able not only to identify areas for improvement, but use the online training materials to bridge the gaps. If they are unable to earn their online training certificate, employees can seek out additional resources in order to pass the second time around. They don’t have to worry about keeping up with their peers, as they can focus on each online training certification course individually and at their own pace. You can even create a pre-assessment to help employees pinpoint their strengths and weaknesses. Then provide a list of recommended online training certification courses. Or conduct surveys to get employees’ input regarding their own gaps.
+                </p>
+
+                <!-- Comment Form -->
+                <div class="comment-box">
+                    <h3>Leave a Comment</h3>
+                    <input type="text" placeholder="Enter Name">
+                    <input type="text" placeholder="Enter Email">
+                    <textarea  cols="30" rows="5" placeholder="Leave Comment"></textarea>
+                </div>
+
+
+            </div>
+
+            <div class="blog-right">
+                <h1>Post Categories</h1>
+                <div>
+                    <span>Business Analytics</span>
+                    <span>21</span>
+                </div>
+                <div>
+                    <span>Machine Learning</span>
+                    <span>28</span>
+                </div>
+                <div>
+                    <span>Artificial Intelligence</span>
+                    <span>21</span>
+                </div>
+                <div>
+                    <span>Google Cloud Platform</span>
+                    <span>30</span>
+                </div>
+                <div>
+                    <span>Data Analytics</span>
+                    <span>27</span>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- --------- footer -----------  -->
+    <section class="about-us">
+        <h3>About Us</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae perspiciatis facere aliquam eligendi tempora, possimus et aperiam, </p>
+
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-facebook"></i>
+
+        <p>Made With ❤️ Us Rahman</p>
+    </section>
+
+    <script>
+
+        var navlinks = document.getElementById("nav-links");
+        function showMenu()
+        {
+            navlinks.style.right = "0";
+        }
+
+        function hideMenu()
+        {
+            navlinks.style.right = "-200";
+        }
+
+    </script>
+</body>
+</html>

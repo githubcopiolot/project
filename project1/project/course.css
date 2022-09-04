@@ -1,0 +1,263 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header
+{
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url("/project1/images/ssm.jpg");
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+nav
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 6%;
+    align-items: center;
+       
+}
+
+nav ul li 
+{
+    list-style-type: none;
+    display: inline-block;
+    padding: 2px 20px;
+}   
+
+nav ul li a
+{
+    text-decoration: none;
+    color: white;
+    
+}
+
+.header img
+{
+    width: 200px;
+}
+
+.nav-links ul li::after
+{
+    content: "";
+    background-color: red;
+    width: 0;
+    height: 2px;
+    display: block;
+    margin: auto;
+}
+
+.nav-links ul li:hover::after
+{
+    width: 100%;
+}
+
+.text-box
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    color: whitesmoke;
+}
+
+.text-box h1
+{
+    font-size: 50px;
+    text-align: center;
+}
+
+.text-box p
+{
+    margin: 10px 0px 35px;
+    font-size: 14px;
+    line-height: 30px;
+}
+
+.hero-btn
+{
+    display: inline-block;
+    padding: 10px 14px;
+    border: 1px solid white;
+    text-decoration: none;
+    color: white;
+    transition: 0.6s;
+}
+
+.hero-btn:hover
+{
+    border: 1px solid red;
+    background-color: #f44336;
+}
+
+nav .fa
+{
+    display: none;
+}
+
+.Course
+{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+h1
+{
+    font-size: 36px;
+    font-weight: 600;
+}
+
+p
+{
+    color: #777;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 22px;
+    padding: 10px;
+}
+
+
+
+.row h3
+{
+    text-align: center;
+}
+
+.row
+{
+    margin-top: 6%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.row .course-col 
+{
+    background-color:#fff3f3;
+    flex-basis: 31%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    border-radius: 30px;
+    transition: 0.5s;
+    margin-bottom: 7%;
+    text-align: left;
+}
+
+
+h3
+{
+    font-weight: 600;
+    margin: 10px 0px;
+}
+
+.row .course-col:hover
+{
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.7);
+}
+/* -----------   Call To Action  */
+.cta
+{
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)),url("/project1/images/banner2.jpg");
+    width: 80%;
+    margin: auto;
+    padding: 100px 0;
+    text-align: center;
+    margin: 100px auto;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+}
+
+
+.cta h1
+{
+    color: white;
+    margin-bottom: 40px;
+}
+
+
+.about-us
+{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+
+i
+{
+    color: red;
+    padding: 15px 10px  10px;
+}
+
+/* what ever code write in the media query that will be applicable for whose device width less than or equal to 700px */
+
+@media(max-width : 700px) {
+
+
+
+    .text-box h1
+    {
+        font-size: 20px;
+    }
+
+    .nav-links ul li 
+    {
+        display: block;
+    }
+
+    .nav-links
+    {
+        position: absolute;
+        background-color: #f44336;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: 0;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+
+
+
+    nav .fa
+    {
+        display: block;
+        color: aliceblue;
+        margin: 10px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    /* .nav-links ul 
+    {
+        padding: 30px;
+    } */
+
+    /* Course section */
+    .row
+    {
+        flex-direction: column;
+    }
+
+    /* Call to action  */
+    .cta h1
+    {
+        font-size:25px;
+    }
+
+}   
+
+
+.text-box p 
+{
+    color: white;
+}

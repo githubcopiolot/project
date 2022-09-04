@@ -1,0 +1,285 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+.header
+{
+    background-image:linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url("/project1/images/background.jpg");
+    min-height: 50vh;
+    background-position: center;
+    background-size: cover;
+}
+
+.header nav
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 6%;
+    align-items: center;
+}
+
+ul li 
+{
+    list-style-type: none;
+    display: inline-block;
+    padding: 2px 20px;
+}
+
+ul li  a
+{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+.nav-links ul li::after
+{
+    content: "";
+    background-color: red;
+    width: 0;
+    height: 2px;
+    display: block;
+    margin: auto;
+}
+
+.nav-links ul li:hover::after
+{
+    width: 100%;
+}
+
+.header img
+{
+    width: 150px;
+}
+
+
+.header h1
+{
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    margin-top: 100px;
+}
+
+/* ---------------- location  */
+
+.location 
+{
+    width: 80%;
+    margin: auto;
+    padding: 6% 0%;
+}
+
+
+iframe
+{
+    width: 100%;
+}
+
+
+
+/* ------------  contact  */
+.contact-us
+{
+    width: 80%;
+    margin:auto;
+}
+
+.contact-col
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.contact-left div
+{
+    display: flex;
+    align-items: center;
+}
+
+.contact-left div i
+{
+    margin: 20px 20px;
+    font-size: 30px;
+}
+
+.contact-left span h2
+{
+    margin-bottom: 10px;
+}
+
+.contact-right input, textarea, button
+{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 12px;
+    border: none;
+    background-color: #f0f0f0;
+    box-sizing: border-box;
+}
+
+p
+{
+    color: #777;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.contact-right
+{
+    flex-basis: 50%;   
+}
+
+button
+{
+    width: 150px;
+    background-color: white;
+    border: 1px solid red;
+    margin-top: 20px;
+
+}
+
+button a
+{
+    text-decoration: none;
+    color:red;
+}
+
+/* ------------ About us  */
+
+.about-us
+{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding: 7% 0;
+}
+
+.about-us h3
+{
+    font-size: 20px;
+}
+
+.about-us p
+{
+    text-align: center;
+    padding: 10px 0;
+}
+
+i
+{
+    color: red;
+    padding: 15px 10px  10px;
+}
+
+nav .fa
+{
+    display: none;
+}
+
+/* footer */
+
+.about-us
+{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding: 10% 0;
+}
+
+.about-us h3
+{
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.about-us p
+{
+    text-align: center;
+    padding: 20px 0;
+}
+
+i
+{
+    color: red;
+    padding: 15px 10px  10px;
+}
+
+nav .fa
+{
+    display: none;
+}
+
+
+
+@media (max-width : 700px) {
+    .contact-col
+    {
+        flex-direction: column;
+        position: relative;
+    }
+
+    .header ul li 
+    {
+        display: block;
+        font-size: 25px;
+    }
+
+    .nav-links
+    {
+        position: absolute;
+        background-color: #f44336;
+        min-height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+
+    nav .fa
+    {
+        display: block;
+    }
+
+    nav .fa-times
+    {
+        color: white;
+        font-size: 20px;
+        padding: 10px;
+    }
+
+    .contact-us .fa{
+        font-size: 20px;
+        margin-left: 0;
+    }
+
+
+
+    span h2{
+        font-size: 15px;
+    }
+
+
+    .contact-right input, textarea, button
+    {
+        display: block;
+        width: 90%;
+        padding: 10px;
+        margin: 12px;
+        border: none;
+        background-color: #f0f0f0;
+        box-sizing: border-box;
+    }
+
+    .contact-right button 
+    {
+        width: 150px;
+    }
+
+}

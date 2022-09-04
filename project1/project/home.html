@@ -1,0 +1,85 @@
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+    <link rel="stylesheet" href="home.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <!-- Adding google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,500;1,100&display=swap" rel="stylesheet">
+
+
+
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <img src="/project1/images/logo.png" alt="">
+            
+            <nav-links id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="home.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </nav-links>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <div class="text-box">
+            <h1>About Us</h1>
+        </div>
+
+    </section>
+
+
+    <!-- ----------------- About us  -->
+    <section class="about-us">
+        <div class="row">
+            <div class="about-col">
+                <h1>We are One of the Top Universities in TamilNadu</h1>
+                <p>SSM Institute of Engineering And Technology  located in DINGIGUL, Tamil Nadu. The University provides multiple courses under the Under Graduate, Post Graduate .Admission to SSM IET can be done by applying online. Top corporates such as Capgemini, Accenture, IBM, Infosys, TCS, Wipro, HCL, Mindtree, DXC, TechMahindra, Amazon, Walmart, Informatica, etc., hire productive professionals from SSM IET</p>
+                <a href="" class="hero-btn">EXPLORE MORE</a>
+            </div>
+
+            <div class="about-col">
+                <img src="/project1/images/about.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- --------------- footer section  -->
+
+    <section class="footer">
+        <h3>Our Collage Placement</h3>
+        <p> Students are encouraged to participate in various Competitions and Hackathons like Capgemini TECH Challenge, Infosys InfyTQ, HackWithInfy Hackathon, TCS CodeVita, TCS InfraMind, Hero MotoCorp Campus Challenge, etc. Top corporates such as Amazon, Capgemini, Infosys, TCS, Wipro, Walmart, JSW, TechMahindra, Informatica, etc., hire productive professionals from SSM IET </p>
+        <i class="fa fot fa-instagram"></i>
+        <i class="fa fot fa-facebook"></i>
+        <i class="fa fot fa-linkedin"></i>
+        <i class="fa fot fa-twitter"></i>
+
+        <p>Made With ❤️ by <strong>Rahman</strong> </p>
+    </section>
+
+    <script>
+        var navLinks = document.getElementById("navLinks"); 
+        function showMenu()
+        {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu()
+        {
+            navLinks.style.right = "-200";
+        }
+    </script>
+
+</body>
+</html>
